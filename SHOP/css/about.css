@@ -1,0 +1,161 @@
+/****Start Edite Elements****/
+*{text-decoration: none;}
+body{/*overflow: hidden;*/}
+a:hover, a:focus {
+     text-decoration: none;
+}
+/*main section*/
+#body{
+    background-image: url('img/main.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    min-height: 720px;
+    overflow-x: hidden;
+}
+
+.main-sec{background:none;padding-top: 24px;}
+.main-sec h1{
+    font-size: 50px;
+    letter-spacing: -4px;
+    font-weight: 700;
+    color: #1e2d4c;
+    cursor: pointer;
+}
+.main-sec h1 span{
+    color: #d34949;
+}
+.main-sec h1:hover{color: #d34949;}
+.main-sec h1:hover span{color: #1e2d4c;}
+.main-sec ul{
+    float: right;
+    position: relative;
+    top: -71px;
+    font-size: 28px;
+    cursor: pointer;
+}
+.main-sec ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 15px;
+    line-height: 20px;
+    color: #fff;
+}
+.main-sec ul li:hover{
+    font-size: 32px;
+    padding: 10px;
+    color: #1eebcf;
+}
+.active{
+    color: #d34949 !important;
+    padding-bottom: 14px !important;
+    border-bottom: 3px solid #ff0;
+}
+#menue,#cansel{
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    border: none;
+    background: none;
+    width: 50px;
+    height: 40px;
+    margin: 20px auto;
+    display: block;
+    display: none;
+}
+#cansel{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 12px;
+    top: 15px;
+    right: 3px;
+    color: #54585d;
+}
+#menue:active,
+#menue:focus,
+#cansel:active,
+#cansel:focus{
+    outline: 0;
+}
+#menue span{
+    height: 2px;
+    width: 70%;
+    background-color: #fff2f2;
+    display: block;
+    margin-bottom: 10px;
+}
+.go{
+    opacity: 0;
+}
+.come{
+    opacity: 1;
+}
+/*Start Aside menue*/
+.main-sec nav{
+    float: right;
+    margin: 0px;
+    width: 48%;
+    min-height: 760px;
+    display: block;
+    background-color: #0fd7d7;
+    position: relative;
+    top: -121px;
+    display: none;
+    transform: translateX(994px);
+}
+.main-sec nav h1{
+    display: block;
+    position: relative;
+    padding: 12px;
+    font-size: 35px;
+}
+.main-sec nav ul{
+    position: absolute;
+    display: block;
+    float: left;
+    top: 60px;
+}
+.main-sec nav ul li{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 40px;
+    color: #1e2d4c;
+    padding: 12px;
+}
+.main-sec nav ul li:hover{
+    border-bottom: 2px solid #234;
+    padding: 22px;
+    color: #06335f;
+}
+.main-sec .back{transform: translateX(0px);}
+
+/*End Aside menue*/
+
+
+/****Start Main thing****/
+
+
+
+
+
+/****End Main thing****/
+
+
+
+
+
+
+
+
+
+
+
+/*media phone*/
+@media(max-width:1000px){
+    #menue,#cansel{display: block;}
+    .main-sec ul{display: none;}
+    .new h2{font-size: 30px;}
+    .new h2 span{font-size: 43px;}
+    .main-sec nav {display: block;}
+}
